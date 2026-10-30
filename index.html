@@ -4,152 +4,332 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jyoshna | Data Analyst Portfolio</title>
+
 <style>
-*{margin:0;padding:0;box-sizing:border-box;scroll-behavior:smooth}
-body{font-family:Arial,sans-serif;background:#0b1020;color:#eef2ff;line-height:1.7}
-header{padding:22px 8%;display:flex;justify-content:space-between;align-items:center;background:#111a30;position:sticky;top:0}
-.logo{font-size:22px;font-weight:bold;color:#a5b4fc}
-nav a{color:#eee;text-decoration:none;margin-left:20px;font-size:14px}
-section{padding:65px 10%;scroll-margin-top:75px}
-.hero{min-height:430px;display:flex;flex-direction:column;justify-content:center}
-.hero h1{font-size:45px;margin:12px 0}
-.hero h1 span{color:#a5b4fc}
-.tag{color:#a5b4fc;font-weight:bold}
-.hero p,.about p{color:#cbd5e1;max-width:700px}
-.btn{display:inline-block;margin-top:22px;padding:11px 23px;background:#818cf8;color:#10152a;text-decoration:none;border-radius:7px;font-weight:bold}
-h2{font-size:29px;margin-bottom:25px;color:#c7d2fe}
-.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
-.card{background:#151f38;padding:23px;border:1px solid #293754;border-radius:12px}
-.card h3{color:#a5b4fc;margin-bottom:10px}
-.card p{color:#cbd5e1;font-size:14px}
-.skills span{display:inline-block;background:#202d4b;padding:9px 15px;border-radius:7px;margin:6px;color:#dbeafe}
-a{color:#a5b4fc}
-footer{text-align:center;padding:30px;background:#111a30;color:#cbd5e1}
-@media(max-width:650px){
-header{flex-direction:column;gap:10px}
-nav a{margin:5px;font-size:12px}
-.hero h1{font-size:34px}
-section{padding:48px 7%}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-<style>
+
+body {
+    font-family: Arial, sans-serif;
+    background: #0b1020;
+    color: #eef2ff;
+    line-height: 1.7;
+}
+
+header {
+    padding: 22px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111a30;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+    color: #a5b4fc;
+}
+
+nav a {
+    color: #eee;
+    text-decoration: none;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+section {
+    padding: 65px 10%;
+    scroll-margin-top: 75px;
+}
+
+.hero {
+    min-height: 430px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.hero h1 {
+    font-size: 45px;
+    margin: 12px 0;
+}
+
+.hero h1 span {
+    color: #a5b4fc;
+}
+
+.tag {
+    color: #a5b4fc;
+    font-weight: bold;
+}
+
+.hero p, .about p {
+    color: #cbd5e1;
+    max-width: 700px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 22px;
+    padding: 11px 23px;
+    background: #818cf8;
+    color: #10152a;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 29px;
+    margin-bottom: 25px;
+    color: #c7d2fe;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: #151f38;
+    padding: 23px;
+    border: 1px solid #293754;
+    border-radius: 12px;
+}
+
+.card h3 {
+    color: #a5b4fc;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+.skills span {
+    display: inline-block;
+    background: #202d4b;
+    padding: 9px 15px;
+    border-radius: 7px;
+    margin: 6px;
+    color: #dbeafe;
+}
+
+a {
+    color: #a5b4fc;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111a30;
+    color: #cbd5e1;
+}
+
+/* Profile Photo */
 .Profile-Photo {
-  width:150x;
-  height:150x;
-  border-radius:50%;
-  object-fit:cover;
-  display:block;
-  margin:15px auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+    margin: 15px 0;
+    border: 4px solid #a5b4fc;
+}
+
+/* Resume Button */
+.resume-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 11px 23px;
+    background: #818cf8;
+    color: #10152a;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+@media(max-width: 650px) {
+    header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    nav a {
+        margin: 5px;
+        font-size: 12px;
+    }
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    section {
+        padding: 48px 7%;
+    }
 }
 </style>
 </head>
+
 <body>
 
 <header>
-<div class="logo">Jyoshna.</div>
-<nav>
-<a href="#home">Home</a>
-<a href="#about">About</a>
-<a href="#skills">Skills</a>
-<a href="#projects">Projects</a>
-<a href="#contact">Contact</a>
-</nav>
+    <div class="logo">Jyoshna.</div>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 </header>
 
 <section class="hero" id="home">
-<p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
-<img src="Profile.jpg" alt="Jyoshna" class="Profile Photo">
-<h1>Hi, I'm <span>Jyoshna</span></h1>
-<h2>Aspiring Data Analyst</h2>
-<p>Computer Science graduate passionate about transforming data into meaningful insights through analysis, visualization and technology.</p>
-<a class="btn" href="#projects">Explore My Work ↓</a>
+    <p class="tag">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+    <img src="Profile.jpg" alt="Jyoshna" class="Profile-Photo">
+
+    <h1>Hi, I'm <span>Jyoshna</span></h1>
+    <h2>Aspiring Data Analyst</h2>
+
+    <p>Computer Science graduate passionate about transforming data into meaningful insights through analysis, visualization and technology.</p>
+
+    <a class="btn" href="#projects">Explore My Work ↓</a>
 </section>
 
 <section id="about" class="about">
-<h2>About Me</h2>
-<p>I am a Computer Science and Engineering graduate with an interest in Data Analytics. I have foundational knowledge of Python, SQL, Excel and Power BI. I enjoy exploring datasets, identifying patterns and presenting insights through visualizations. I am continuously learning and improving my analytical skills through hands-on projects and internships.</p>
-<br>
-<div class="card">
-<h3>Education</h3>
-<p>Bachelor of Technology – Computer Science and Engineering</p>
-<p>CGPA: 7.51</p>
-</div>
-<br>
-<div class="card">
-<h3>Internship Experience</h3>
-<p><b>AI Data Analyst Intern – InAmigos Foundation</b></p>
-<p>Worked on NGO research, AI-powered data analysis and social impact research activities.</p>
-</div>
+    <h2>About Me</h2>
+
+    <p>I am a Computer Science and Engineering graduate with an interest in Data Analytics. I have foundational knowledge of Python, SQL, Excel and Power BI. I enjoy exploring datasets, identifying patterns and presenting insights through visualizations. I am continuously learning and improving my analytical skills through hands-on projects and internships.</p>
+
+    <br>
+
+    <div class="card">
+        <h3>Education</h3>
+        <p>Bachelor of Technology – Computer Science and Engineering</p>
+        <p>CGPA: 7.51</p>
+    </div>
+
+    <br>
+
+    <div class="card">
+        <h3>Internship Experience</h3>
+        <p><b>AI Data Analyst Intern – InAmigos Foundation</b></p>
+        <p>Worked on NGO research, AI-powered data analysis and social impact research activities.</p>
+    </div>
 </section>
 
 <section id="skills">
-<h2>Technical Skills</h2>
-<div class="skills">
-<span>Python</span>
-<span>SQL</span>
-<span>Microsoft Excel</span>
-<span>Power BI</span>
-<span>Tableau</span>
-<span>Data Analysis</span>
-<span>Data Visualization</span>
-<span>Exploratory Data Analysis</span>
-<span>Generative AI</span>
-</div>
+    <h2>Technical Skills</h2>
+
+    <div class="skills">
+        <span>Python</span>
+        <span>SQL</span>
+        <span>Microsoft Excel</span>
+        <span>Power BI</span>
+        <span>Tableau</span>
+        <span>Data Analysis</span>
+        <span>Data Visualization</span>
+        <span>Exploratory Data Analysis</span>
+        <span>Generative AI</span>
+    </div>
 </section>
 
 <section id="projects">
-<h2>My Projects</h2>
-<div class="grid">
-<div class="card">
-<h3>Hotel Booking Analysis</h3>
-<p>Analyzed hotel booking data using R to explore cancellations, booking patterns, missing values and revenue-related trends.</p>
-</div>
-<div class="card">
-<h3>Sales Analysis Dashboard</h3>
-<p>Used Microsoft Excel features such as Pivot Tables, charts and slicers to analyze sales performance and present insights.</p>
-</div>
-<div class="card">
-<h3>Product Sales Dashboard</h3>
-<p>Created a Tableau dashboard to explore product sales and regional performance through data visualization.</p>
-</div>
-<div class="card">
-<h3>Automated Data Analyzer</h3>
-<p>Academic project focused on automating exploratory data analysis using Generative AI.</p>
-</div>
-<div class="card">
-<h3>AI Resume Screening System</h3>
-<p>Academic mini project focused on AI-powered resume screening and enhancement.</p>
-</div>
-</div>
+    <h2>My Projects</h2>
+
+    <div class="grid">
+
+        <div class="card">
+            <h3>Hotel Booking Analysis</h3>
+            <p>Analyzed hotel booking data using R to explore cancellations, booking patterns, missing values and revenue-related trends.</p>
+        </div>
+
+        <div class="card">
+            <h3>Sales Analysis Dashboard</h3>
+            <p>Used Microsoft Excel features such as Pivot Tables, charts and slicers to analyze sales performance and present insights.</p>
+        </div>
+
+        <div class="card">
+            <h3>Product Sales Dashboard</h3>
+            <p>Created a Tableau dashboard to explore product sales and regional performance through data visualization.</p>
+        </div>
+
+        <div class="card">
+            <h3>Automated Data Analyzer</h3>
+            <p>Academic project focused on automating exploratory data analysis using Generative AI.</p>
+        </div>
+
+        <div class="card">
+            <h3>AI Resume Screening System</h3>
+            <p>Academic mini project focused on AI-powered resume screening and enhancement.</p>
+        </div>
+
+    </div>
 </section>
 
 <section id="certifications">
-<h2>Certifications & Learning</h2>
-<div class="grid">
-<div class="card"><h3>Deloitte</h3><p>Data Analytics Virtual Internship</p></div>
-<div class="card"><h3>Tata</h3><p>Data Analytics Virtual Internship</p></div>
-<div class="card"><h3>SmartBridge</h3><p>Generative AI with IBM Cloud</p></div>
-<div class="card"><h3>Forage</h3><p>Data Analytics Virtual Experience</p></div>
-<div class="card"><h3>Simplilearn</h3><p>Data Analytics Learning</p></div>
-</div>
+    <h2>Certifications & Learning</h2>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Deloitte</h3>
+            <p>Data Analytics Virtual Internship</p>
+        </div>
+
+        <div class="card">
+            <h3>Tata</h3>
+            <p>Data Analytics Virtual Internship</p>
+        </div>
+
+        <div class="card">
+            <h3>SmartBridge</h3>
+            <p>Generative AI with IBM Cloud</p>
+        </div>
+
+        <div class="card">
+            <h3>Forage</h3>
+            <p>Data Analytics Virtual Experience</p>
+        </div>
+
+        <div class="card">
+            <h3>Simplilearn</h3>
+            <p>Data Analytics Learning</p>
+        </div>
+    </div>
 </section>
 
 <section id="contact">
-<h2>Let's Connect</h2>
-<div class="card">
-<p>I'm looking forward to learning, collaborating and exploring opportunities in Data Analytics.</p>
-<p>Email: <a href="mailto:mylaganijyoshna@gmail.com">mylaganijyoshna@gmail.com</a></p>
-<p>LinkedIn: <a href="https://linkedin.com/in/mylagani-jyoshna-84374b345" target="_blank">Visit my LinkedIn</a></p>
-<p>GitHub: <a href="https://github.com/mylaganijyoshna-alt" target="_blank">Visit my GitHub</a></p>
-</div> 
-<p>
-  <a href="Jyoshna_Data_Analyst_Resume.pdf" download
-    class="resume-btn">Download My Resume (PDF)</a>
-</p>
+    <h2>Let's Connect</h2>
+
+    <div class="card">
+        <p>I'm looking forward to learning, collaborating and exploring opportunities in Data Analytics.</p>
+
+        <p>Email: <a href="mailto:mylaganijyoshna@gmail.com">mylaganijyoshna@gmail.com</a></p>
+
+        <p>LinkedIn: <a href="https://linkedin.com/in/mylagani-jyoshna-84374b345" target="_blank">Visit my LinkedIn</a></p>
+
+        <p>GitHub: <a href="https://github.com/mylaganijyoshna-alt" target="_blank">Visit my GitHub</a></p>
+    </div>
+
+    <p>
+        <a href="Jyoshna_Data_Analyst_Resume.pdf" download class="resume-btn">Download My Resume (PDF)</a>
+    </p>
 </section>
 
 <footer>
-<p>© 2026 Jyoshna | Data Analyst Portfolio</p>
-<p>Designed with passion and continuous learning.</p>
+    <p>© 2026 Jyoshna | Data Analyst Portfolio</p>
+    <p>Designed with passion and continuous learning.</p>
 </footer>
 
 </body>
